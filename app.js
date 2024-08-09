@@ -9,6 +9,10 @@ app.get("/", (req, res) => {
     res.send('Hello World!')
 });
 
+app.post("/webhook", (req, res) => {
+  res.send("webhook test");
+});
+
 app.post("/where-we-meet", (req, res) => {
   // 切换到root目录，执行 ./ci.sh 脚本
   exec(
